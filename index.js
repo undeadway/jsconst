@@ -13,15 +13,15 @@ function read (modules, parent, object) {
             object[name] = require(path);
         } else if (stat.isDirectory()) {
             let index = `${path}/index.js`;
-            object[name] = fs.existsSync(index) ?  require(index) : {};
+            let sub = object[name] = fs.existsSync(index) ?  require(index) : {};
             read(fs.readdirSync(path), path, sub);
         }
     });
 }
 
-read(fs.readdirSync("./modules"), "./modules", root);
+read(fs.readdirSync(__dirname + "/modules"), __dirname + "/modules", root);
 
-if (typeof(window)) {
+if (typeof(window) !== 'undefined') {
     window.JsConst = root;
 } else {
     global.JsConst = root;
