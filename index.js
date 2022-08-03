@@ -22,7 +22,7 @@ function read (modules, parent, object) {
 read(fs.readdirSync("./modules"), "./modules", root);
 
 if (typeof(window)) {
-    window.NodeConst = root;
+    window.JsConst = root;
 } else {
-    global.NodeConst = root;
+    global.JsConst = root;
 }
