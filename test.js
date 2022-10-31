@@ -1,6 +1,8 @@
-const { JSDOM } = require("jsdom");
-const { window } = new JSDOM("");
+// const { JSDOM } = require("jsdom");
+// const { window } = new JSDOM("");
 
-global.window = window;
+// global.window = window;
 
 require("./index");
+
+console.log(JsConst);
