@@ -41,6 +41,6 @@ if (typeof(window) !== 'undefined') {
 		});
 	}
 
-	read(fs.readdirSync("./modules"), "./modules", root);
+	read(fs.readdirSync(__dirname + "/modules"), __dirname + "/modules", root);
 	global.JsConst = root;
 }
