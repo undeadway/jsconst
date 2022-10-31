@@ -11,5 +11,8 @@
     "url": "https://gitee.com/undeadway/jsconst.git"
   },
   "author": "hzwaygc@gmail.com",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jsom": "^20.0.0"
+  }
 }
