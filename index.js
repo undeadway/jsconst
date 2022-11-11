@@ -60,6 +60,9 @@ if (typeof(window) !== 'undefined') {
 
 	window.JsConst = root;
 } else {
+
+	const fs = require("fs");
+
 	function read (modules, parent, object) {
 		modules.map(module => {
 			let path = `${parent}/${module}`;
