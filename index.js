@@ -28,7 +28,7 @@ if (typeof(window) !== 'undefined') {
 		});
 	}
 
-	read("modules", ".");
+	read("modules", ".", root);
 
 	window.JsConst = root;
 } else {
