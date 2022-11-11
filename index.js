@@ -13,13 +13,15 @@ if (typeof(window) !== 'undefined') {
 	
 			if (ret === null) {
 
+				let nowObj;
+
 				if (now === "modules") {
-					object[key] = {};
+					nowObj = object[key] = {};
 				} else {
-					object[now] = {};
+					nowObj = object[now] = {};
 				}
 
-				read(key, path, root[key]);
+				read(key, path, nowObj);
 			} else {
 				object[ret[2]] = _libs(ret[2]);
 			}
