@@ -1,5 +1,7 @@
 const root = {};
 
+require("./lib/init");
+
 if (typeof(window) !== 'undefined') {
 	try {
 		function putObject(parent, names) {
