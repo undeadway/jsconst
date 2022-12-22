@@ -49,7 +49,11 @@ if (typeof(window) !== 'undefined') {
 					let names = path.slice(0,  path.length - 3).split("/");
 					let fileName = names.pop();
 					let obj = getObject(root, names);
-					obj[fileName] = _lib(key);
+					if (fileName === "index") {
+						obj = Object.assign(obj, _lib(key));
+					} else {
+						obj[fileName] = _lib(key);
+					}
 				} else if (path.indexOf("/") === path.length - 1) {
 					let names = path.slice(0,  path.length - 1).split("/");
 
@@ -61,8 +65,8 @@ if (typeof(window) !== 'undefined') {
 		read("modules", ".");
 
 		window.JsConst = root;
-	} catch {
-		
+	} catch (e) {
+		console.log(e);
 	}
 } else {
 	try {
