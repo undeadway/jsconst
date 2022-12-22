@@ -5,18 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/index.js"
-        },
-        {
-            "type": "pwa-node",
-            "request": "launch",
-            "name": "Launch Test",
+            "name": "测试",
             "skipFiles": [
                 "<node_internals>/**"
             ],
