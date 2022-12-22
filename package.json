@@ -13,6 +13,6 @@
   "author": "hzwaygc@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
-    "jsom": "^20.0.0"
+    "jsdom": "18.0.1"
   }
 }
