@@ -3,6 +3,8 @@ const root = {};
 require("./lib/init");
 
 if (typeof(window) !== 'undefined') {
+	if (window.JsConst) return;
+
 	try {
 		function putObject(parent, names) {
 			let name = names.shift();
@@ -69,6 +71,8 @@ if (typeof(window) !== 'undefined') {
 		console.log(e);
 	}
 } else {
+	if (global.JsConst) return;
+
 	try {
 		const fs = require("fs");
 
@@ -90,6 +94,7 @@ if (typeof(window) !== 'undefined') {
 		}
 
 		read(fs.readdirSync(__dirname + "/modules"), __dirname + "/modules", root);
+
 		global.JsConst = root;
 	} catch {
 		
