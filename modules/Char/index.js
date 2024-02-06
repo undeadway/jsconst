@@ -25,6 +25,7 @@ module.exports = {
 	EQUALS: "=",
 	TILDE: "~",
 	EXCALMATORY: "!",
+    NEW_LINE_REGX: /(\r\n|\r|\n)/
 	// LEFT_ANGLE: "<",
 	// RIGHT_ANGLE: ">"
 };
