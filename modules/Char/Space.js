@@ -4,4 +4,5 @@ module.exports = {
 	TAB: "\t",
     LF: "\n",
     CR: "\r"
+    NEW_LINE_REGX: /(\r\n|\r|\n)/
 }
