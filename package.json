@@ -1,7 +1,7 @@
 {
   "name": "jsconst",
   "version": "0.0.1",
-  "description": "",
+  "description": "Configured with commonly used values in JavaScript as constants",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

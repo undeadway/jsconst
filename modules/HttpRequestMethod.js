@@ -7,5 +7,6 @@ module.exports = {
     HEAD: "HEAD",
     OPTIONS: "OPTIONS",
     TRACE: "TRACE",
-    PATCH: "PATCH"
+    PATCH: "PATCH",
+    WEBSOCKT: "WS"
 };
