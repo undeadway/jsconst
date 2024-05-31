@@ -1,6 +1,6 @@
 {
   "name": "jsconst",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Configured with commonly used values in JavaScript as constants",
   "main": "index.js",
   "scripts": {
