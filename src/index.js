@@ -30,9 +30,6 @@ if (typeof(window) !== 'undefined') {
 		}
 
 		function read (now, parent) {
-
-			const path = `${parent}/${now}/`;
-
 			const _lib = require.context("./modules/.");
 			_lib.keys().forEach(key => {
 
@@ -97,6 +94,5 @@ if (typeof(window) !== 'undefined') {
 
 		global.JsConst = root;
 	} catch {
-		
 	}
 }
