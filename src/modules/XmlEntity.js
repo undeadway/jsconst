@@ -5,5 +5,6 @@ module.exports = {
     QUOT: "&quot;", // "
     APOS: "&apos;", // '
     SHARP: "&#35;", // #
-    SPACE: "&nbsp;"
+    SPACE: "&nbsp;",
+    ZERO_WIDTH: "&#8203;" // 零宽字符
 }
