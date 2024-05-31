@@ -38,11 +38,11 @@ if (typeof(window) !== 'undefined') {
 				/*
 				* 输出有四种模式：
 				* 文件夹
-				* 文件夹名/
+				* 文件夹/
 				* 文件夹/文件名
 				* 文件夹/文件名.js
 				* 
-				* 因为 文件夹名/ 和  文件夹/文件名.js 具有可判断性，所以保留，其余不做处理
+				* 因为 文件夹/ 和  文件夹/文件名.js 具有可判断性，所以保留，其余不做处理
 				*/
 				if (path.indexOf(".js") === path.length - 3) {
 					let names = path.slice(0,  path.length - 3).split("/");
