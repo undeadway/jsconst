@@ -21,7 +21,7 @@
     "js type",
     "space value"
   ],
-  "homepage": "http://codes.waygc.net/projects?jsconst",
+  "homepage": "http://tech-demo.waygc.net/toys/?jsconst",
   "author": "hzwaygc@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
