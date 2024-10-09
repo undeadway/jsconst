@@ -1,5 +1,6 @@
 module.exports = {
     ZERO_WIDTH: "\uFEFF",
+	BLANK: "",
 	QUESTION: "?",
 	DQUOTE: "\"",
 	QUOTE: "'",
