@@ -1,6 +1,6 @@
 module.exports = {
-    LEFT_ANGLE: "&lt;", // <
-    RIGHT_ANGLE: "&gt;",  // >
+    LT: "&lt;", // <
+    GT: "&gt;",  // >
     AMP: "&amp;", // &
     QUOT: "&quot;", // "
     APOS: "&apos;", // '
