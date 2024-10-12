@@ -3,7 +3,7 @@ const root = {};
 require("./lib/init");
 
 if (typeof(window) !== 'undefined') {
-	if (window.JsConst) return;
+	if (typeof(window.JsConst) === 'undefined') return;
 
 	try {
 		function putObject(parent, names) {
